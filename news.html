@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates | Kembata Zone Education Bureau</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/3429/3429433.png" alt="Logo">
+            <div class="logo-text">
+                <span class="dept-name">Kembata Zone</span>
+                <span class="dept-subtext">Education Bureau</span>
+            </div>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Bureau</a></li>
+            <li><a href="policies.html">Policies</a></li>
+            <li><a href="curriculum.html">Curriculum</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<header class="news-hero">
+    <div class="container">
+        <h1>Latest Newsroom</h1>
+        <p>Real-time updates on education, policy, and regional achievements.</p>
+    </div>
+</header>
+
+<main class="main-content-wrapper">
+    <div class="news-controls">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="newsSearch" placeholder="Search news articles...">
+        </div>
+        <div class="filters">
+            <button class="filter-btn active">All News</button>
+        </div>
+    </div>
+
+    <div class="news-grid" id="newsGrid">
+        <article class="news-card">
+            <div class="news-img"><img src="https://images.unsplash.com/photo-1577896851231-70ef14600410?w=600" alt="News"><span class="tag">Update</span></div>
+            <div class="news-body"><span>Mar 22, 2026</span><h3>Durame Digital Library Phase 1 Completed</h3><p>The first phase of the regional digital library is now open to students for research...</p><button onclick="openNews(1)">Read Full Story</button></div>
+        </article>
+
+        <article class="news-card">
+            <div class="news-img"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600" alt="News"><span class="tag">Exam</span></div>
+            <div class="news-body"><span>Mar 20, 2026</span><h3>Grade 12 National Exam Prep Materials</h3><p>Official mock examinations and study guides are now available for download...</p><button onclick="openNews(2)">Read Full Story</button></div>
+        </article>
+
+        <article class="news-card">
+            <div class="news-img"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600" alt="News"><span class="tag">Event</span></div>
+            <div class="news-body"><span>Mar 18, 2026</span><h3>Regional Sports Day Competition 2026</h3><p>Schools across Kembata Zone will compete in the annual athletics meet starting Friday...</p><button onclick="openNews(3)">Read Full Story</button></div>
+        </article>
+
+        <article class="news-card">
+            <div class="news-img"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600" alt="News"><span class="tag">Announcement</span></div>
+            <div class="news-body"><span>Mar 15, 2026</span><h3>Teacher Scholarship Program 2026</h3><p>Applications are now open for teachers seeking advanced degree funding...</p><button onclick="openNews(4)">Read Full Story</button></div>
+        </article>
+
+        <article class="news-card">
+            <div class="news-img"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600" alt="News"><span class="tag">Event</span></div>
+            <div class="news-body"><span>Mar 12, 2026</span><h3>STEM Innovation Fair Highlights</h3><p>Showcasing brilliant inventions created by our secondary school students...</p><button onclick="openNews(5)">Read Full Story</button></div>
+        </article>
+
+        <article class="news-card">
+            <div class="news-img"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600" alt="News"><span class="tag">Announcement</span></div>
+            <div class="news-body"><span>Mar 10, 2026</span><h3>New Curriculum Integration Workshop</h3><p>Training sessions for principals on the revised national curriculum strategies...</p><button onclick="openNews(6)">Read Full Story</button></div>
+        </article>
+
+        <article class="news-card">
+            <div class="news-img"><img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600" alt="News"><span class="tag">Exam</span></div>
+            <div class="news-body"><span>Mar 05, 2026</span><h3>Regional Ranking: Top Performing Schools</h3><p>The Bureau releases performance rankings for schools across all 12 districts...</p><button onclick="openNews(7)">Read Full Story</button></div>
+        </article>
+
+        <article class="news-card">
+            <div class="news-img"><img src="https://images.unsplash.com/photo-1511629091441-ee46146481b6?w=600" alt="News"><span class="tag">Event</span></div>
+            <div class="news-body"><span>Mar 01, 2026</span><h3>International Literacy Day Celebrations</h3><p>Events held across the zone to promote reading culture and student book clubs...</p><button onclick="openNews(8)">Read Full Story</button></div>
+        </article>
+
+        <article class="news-card">
+            <div class="news-img"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600" alt="News"><span class="tag">Announcement</span></div>
+            <div class="news-body"><span>Feb 25, 2026</span><h3>School Lunch Program Expansion</h3><p>Extending nutritional support to 50 additional rural primary schools...</p><button onclick="openNews(9)">Read Full Story</button></div>
+        </article>
+
+        <article class="news-card">
+            <div class="news-img"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600" alt="News"><span class="tag">Event</span></div>
+            <div class="news-body"><span>Feb 20, 2026</span><h3>ICT Training for Rural Educators</h3><p>Equipping teachers with digital instruction skills to modernize classrooms...</p><button onclick="openNews(10)">Read Full Story</button></div>
+        </article>
+    </div>
+
+    <section class="newsletter-box">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our weekly news bulletin to never miss an update.</p>
+        <form class="news-form">
+            <input type="email" placeholder="Your Email Address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+</main>
+
+<div id="newsModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">×</span>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<footer class="site-footer" id="contact">
+    <div class="footer-top">
+        <div class="footer-container">
+            <div class="footer-column bureau-info">
+                <div class="f-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3429/3429433.png" alt="Logo">
+                    <h3>Kembata Zone Education Bureau</h3>
+                </div>
+                <p>The central administrative body responsible for educational policy, school oversight, and teacher development within the Kembata Zone region.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="f-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Bureau</a></li>
+                    <li><a href="#news">Latest News</a></li>
+                    <li><a href="#">Academic Calendar</a></li>
+                    <li><a href="#">Bureau Policies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Contact Details</h4>
+                <div class="contact-box">
+                    <div class="c-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Durame City, Kembata Zone, Ethiopia</span>
+                    </div>
+                    <div class="c-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+251 46 XXX XXXX<br>+251 91 XXX XXXX</span>
+                    </div>
+                    <div class="c-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@kembataeducation.gov.et</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Our Location</h4>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.0000000000!2d37.8864!3d7.2361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x170e5b0000000001%3A0x0000000000000000!2sDurame!5e0!3m2!1sen!2set!4v1700000000000" width="100%" height="150" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="footer-container centered-text">
+            <p>© 2026 Kembata Zone Education Bureau. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="news.js"></script>
+</body>
+</html>
