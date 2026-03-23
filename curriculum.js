@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+ocument.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.querySelector('#mobile-menu');
     const navLinks = document.querySelector('#nav-links');
     const policyDrop = document.querySelector('#policy-dropdown');
@@ -16,18 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Dark Mode Toggle
 
-    darkToggle?.addEventListener('click', () => {
-        const isDark = document.body.getAttribute('data-theme') === 'dark';
-        isDark ? document.body.removeAttribute('data-theme') : document.body.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', isDark ? 'light' : 'dark');
-    });
 
-    if (localStorage.getItem('theme') === 'dark') document.body.setAttribute('data-theme', 'dark');
-
-    // Mobile Menu
-    document.getElementById('mobile-menu')?.addEventListener('click', () => {
-        document.getElementById('nav-links').classList.toggle('active');
+    // 4. Dark Mode
+    darkToggle.addEventListener('click', () => {
+        const body = document.body;
+        if (body.getAttribute('data-theme') === 'dark') {
+            body.removeAttribute('data-theme');
+            darkToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        } else {
+            body.setAttribute('data-theme', 'dark');
+            darkToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
     });
 });
+
+
+
+
+
+/* the about us code */
+
+
+
