@@ -1,3 +1,5 @@
+
+
 const newsContent = {
     1: { title: "Digital Library Phase 1", text: "The Bureau has successfully launched the first phase of the digital library project. It includes high-speed fiber connectivity and 10,000+ local educational resources." },
     2: { title: "Grade 12 National Exam Prep", text: "Mock exam schedules and study materials are now available at all district education offices and can be downloaded from our curriculum section." },
@@ -11,6 +13,7 @@ const newsContent = {
     10: { title: "ICT Training for Educators", text: "Over 300 teachers received specialized training on using classroom tablets and interactive digital teaching tools." }
 };
 
+
 function openNews(id) {
     const modal = document.getElementById("newsModal");
     const body = document.getElementById("modalBody");
@@ -20,10 +23,22 @@ function openNews(id) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Menu Toggle
     const menuBtn = document.querySelector('#mobile-menu');
     const navLinks = document.querySelector('#nav-links');
-    menuBtn?.addEventListener('click', () => navLinks.classList.toggle('active'));
+    const policyDrop = document.querySelector('#policy-dropdown');
+
+
+    // 1. Mobile Navigation
+    menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // 2. Mobile Dropdown Toggle
+    policyDrop.addEventListener('click', () => {
+        if (window.innerWidth <= 1024) {
+            policyDrop.classList.toggle('open');
+        }
+    });;
 
     // Dark Mode Toggle
     const darkToggle = document.querySelector('#dark-mode-toggle');

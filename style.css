@@ -18,10 +18,10 @@
 body { background: var(--bg-alt); color: var(--dark); transition: 0.3s; line-height: 1.6; }
 
 /* --- Navbar --- */
-.navbar { background: var(--light); height: 85px; display: flex; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: var(--shadow); }
+.navbar { background: var(--light); height: 110px; display: flex; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: var(--shadow); }
 .nav-container { width: 90%; max-width: 1300px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
 .nav-logo { display: flex; align-items: center; gap: 12px; }
-.nav-logo img { height: 50px; }
+.nav-logo img { height: 90px; }
 .dept-name { font-weight: 800; color: var(--primary); font-size: 1.2rem; text-transform: uppercase; }
 .nav-links { display: flex; list-style: none; gap: 25px; }
 .nav-links a { text-decoration: none; color: var(--dark); font-weight: 600; font-size: 0.95rem; }

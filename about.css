@@ -18,10 +18,10 @@
 body { background: var(--bg-alt); color: var(--dark); line-height: 1.6; overflow-x: hidden; }
 
 /* --- Navbar --- */
-.navbar { background: var(--light); height: 85px; display: flex; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: var(--shadow); }
+.navbar { background: var(--light); height: 110px; display: flex; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: var(--shadow); }
 .nav-container { width: 90%; max-width: 1300px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
 .nav-logo { display: flex; align-items: center; gap: 12px; }
-.nav-logo img { height: 50px; }
+.nav-logo img { height: 90px; }
 .dept-name { font-weight: 800; color: var(--primary); font-size: 1.2rem; text-transform: uppercase; }
 .nav-links { display: flex; list-style: none; gap: 25px; }
 .nav-links a { text-decoration: none; color: var(--dark); font-weight: 600; font-size: 0.95rem; }
@@ -89,6 +89,10 @@ section { margin-bottom: 100px; }
 .footer-bottom { background: #111; padding: 25px 0; border-top: 1px solid rgba(255,255,255,0.05); }
 .centered-text { text-align: center; display: block; }
 .footer-bottom p { font-size: 0.85rem; color: #777; margin: 0; }
+
+/* --- Mobile Fixes --- */
+.menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.bar { width: 28px; height: 3px; background: var(--dark); border-radius: 5px; }
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 1024px) {

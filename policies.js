@@ -5,14 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const darkToggle = document.querySelector('#dark-mode-toggle');
 
     // 1. Mobile Navigation
-    menuBtn?.addEventListener('click', () => {
+    menuBtn.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-        // Prevent body scroll when menu is open
-        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
     });
 
     // 2. Mobile Dropdown Toggle
-    policyDrop?.addEventListener('click', () => {
+    policyDrop.addEventListener('click', () => {
         if (window.innerWidth <= 1024) {
             policyDrop.classList.toggle('open');
         }
