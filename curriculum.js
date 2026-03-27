@@ -1,4 +1,4 @@
-ocument.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.querySelector('#mobile-menu');
     const navLinks = document.querySelector('#nav-links');
     const policyDrop = document.querySelector('#policy-dropdown');
@@ -16,26 +16,25 @@ ocument.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-
-
-    // 4. Dark Mode
-    darkToggle.addEventListener('click', () => {
+    // 3. Dark Mode (Synced with Home)
+    darkToggle?.addEventListener('click', () => {
         const body = document.body;
-        if (body.getAttribute('data-theme') === 'dark') {
+        const isDark = body.getAttribute('data-theme') === 'dark';
+        
+        if (isDark) {
             body.removeAttribute('data-theme');
             darkToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            localStorage.setItem('theme', 'light');
         } else {
             body.setAttribute('data-theme', 'dark');
             darkToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            localStorage.setItem('theme', 'dark');
         }
     });
+
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.setAttribute('data-theme', 'dark');
+        darkToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
 });
-
-
-
-
-
-/* the about us code */
-
-
-
