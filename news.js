@@ -1,18 +1,9 @@
-
-
 const newsContent = {
-    1: { title: "Digital Library Phase 1", text: "The Bureau has successfully launched the first phase of the digital library project. It includes high-speed fiber connectivity and 10,000+ local educational resources." },
-    2: { title: "Grade 12 National Exam Prep", text: "Mock exam schedules and study materials are now available at all district education offices and can be downloaded from our curriculum section." },
-    3: { title: "Regional Sports Day", text: "The 2026 sports festival kicks off this Friday. Over 40 schools will compete in athletics, football, and volleyball at the Durame Stadium." },
-    4: { title: "Teacher Scholarship Program", text: "New funding available for secondary teachers pursuing Master's degrees in STEM subjects. Applications close next month." },
-    5: { title: "STEM Innovation Fair", text: "A showcase of engineering and coding projects from local high school students. Winners will represent the zone at the regional level." },
-    6: { title: "New Curriculum Integration", text: "A three-day workshop for school principals on implementing the updated national competency-based curriculum." },
-    7: { title: "Regional Ranking Results", text: "Performance analysis of 2025 examinations highlights significant improvement in literacy rates across rural districts." },
-    8: { title: "International Literacy Day", text: "Public reading events and book donation drives held in all major town centers to encourage youth reading habits." },
-    9: { title: "School Lunch Program", text: "Expansion of the nutrition initiative to cover 50 more primary schools, ensuring students receive balanced meals daily." },
-    10: { title: "ICT Training for Educators", text: "Over 300 teachers received specialized training on using classroom tablets and interactive digital teaching tools." }
+    1: { title: "Competent School Leadership for School Improvement", text: "The Central Ethiopia Regional Education Bureau has launched the second round of on-the-job capacity-building training for over 330 school leaders and experts across three centers (Hossana, Worabe, and Bui). The initiative aims to transform school administrators into change leaders to directly improve educational quality and student outcomes across pre-primary, primary, and middle schools in the region." },
+    2: { title: "Public Contribution to Educational Infrastructure is Nation-Building: Chief Administrator Endashaw Tassw", text: "Chief Administrator of Central Ethiopia Region, Endashaw Tassw (PhD), inaugurated the newly reconstructed Sodo Bui Secondary School in the East Gurage Zone. The project, which cost over 210 million Birr, was made possible through the combined efforts of the local community, private investors, and partner organizations. The Chief Administrator praised this collaboration as a model of the public's commitment to building the nation through the expansion of quality education." },
+    3: { title: "Professional Licensing Assessment Underway for Over 18,000 Educators in Central Ethiopia", text: "The Central Ethiopia Regional State has launched a massive professional competency assessment for 18,460 teachers and school leaders across 32 centers. Inaugurated by Deputy Chief Administrator Anteneh Fekadu at Wachemo University, the initiative utilizes both paper-based and online testing to ensure educators meet modern technological and pedagogical standards, ultimately aiming to drive regional education quality." },
+    
 };
-
 
 function openNews(id) {
     const modal = document.getElementById("newsModal");
@@ -23,22 +14,10 @@ function openNews(id) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Menu Toggle
     const menuBtn = document.querySelector('#mobile-menu');
     const navLinks = document.querySelector('#nav-links');
-    const policyDrop = document.querySelector('#policy-dropdown');
-
-
-    // 1. Mobile Navigation
-    menuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-
-    // 2. Mobile Dropdown Toggle
-    policyDrop.addEventListener('click', () => {
-        if (window.innerWidth <= 1024) {
-            policyDrop.classList.toggle('open');
-        }
-    });;
+    menuBtn?.addEventListener('click', () => navLinks.classList.toggle('active'));
 
     // Dark Mode Toggle
     const darkToggle = document.querySelector('#dark-mode-toggle');

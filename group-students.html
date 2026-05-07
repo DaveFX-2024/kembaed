@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Students – Kembata Zone Education Bureau</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="group-students.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR (identical to homepage) ===== -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="./imgs/logo1.png" alt="Logo">
+            <div class="logo-text">
+                <span class="dept-name">Kembata Zone</span>
+                <span class="dept-subtext">Education Bureau</span>
+            </div>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Bureau</a></li>
+            <li class="dropdown" id="policy-dropdown">
+                <a href="policies.html" class="dropbtn">Policies <i></i></a>
+            </li>
+            <li><a href="curriculum.html">Curriculum</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="group-students.html" class="active">Group Students</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+    <div class="page-hero-content">
+        <span class="hero-label"><i class="fas fa-users"></i> Student Group </span>
+        <h1>Students group - Group One</h1>
+        <p></p>
+    </div>
+</section>
+
+<!-- ===== GROUP META INFO ===== -->
+<section class="group-meta-section">
+    <div class="container">
+        <div class="group-meta-card">
+            <!--
+                ============================================================
+                EDIT GROUP INFO HERE
+                ============================================================
+            -->
+            <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                    <span class="meta-label">Grade</span>
+                    <span class="meta-value">Grade 12</span>
+                </div>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+                <i class="fas fa-layer-group"></i>
+                <div>
+                    <span class="meta-label">Group Number</span>
+                    <span class="meta-value">Group 1</span>
+                </div>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+                <i class="fas fa-chalkboard"></i>
+                <div>
+                    <span class="meta-label">Section</span>
+                    <span class="meta-value">Section A</span>
+                </div>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+                <i class="fas fa-book-open"></i>
+                <div>
+                    <span class="meta-label">Project Name</span>
+                    <span class="meta-value">Education Bureau Website Project</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== STUDENTS GRID ===== -->
+<section class="students-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Group Members</h2>
+            <p>Members of Group 1 participating in this project.</p>
+        </div>
+
+        <div class="students-grid">
+            <!--
+                ============================================================
+                HOW TO ADD A STUDENT:
+                Copy one <div class="student-card"> block below and paste it
+                after the last card. Then change:
+                  - src="..." → your student's photo URL or local file path
+                  - alt="..."  → student's full name
+                  - <span class="student-name"> → student's full name
+                ============================================================
+            -->
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/dave.jpg" alt="Dawit Desta">
+                </div>
+                <span class="student-name">Dawit Desta</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/Awute.jpg" alt="Awutaru Muluneh">
+                </div>
+                <span class="student-name">Awutaru Muluneh</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/Girum.jpg" alt="Girum Asfaw">
+                </div>
+                <span class="student-name">Girum Asfaw</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/Mane.jpg" alt="Tesfatsion Hailu">
+                </div>
+                <span class="student-name">Tesfatsion Hailu</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Tekashab Wondimu">
+                </div>
+                <span class="student-name">Tekashab Wondimu</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/Ruhama.jpg" alt="Ruhama Abera">
+                </div>
+                <span class="student-name">Ruhama Abera</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="https://randomuser.me/api/portraits/men/72.jpg" alt="Teshale Markos">
+                </div>
+                <span class="student-name">Teshale Markos</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="Tibebu Tesema">
+                </div>
+                <span class="student-name">Tibebu Tesema</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/Abech Tawoke.jpg" alt="Abenezer Tawoke">
+                </div>
+                <span class="student-name">Abenezer Tawoke</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/Abech Belachew.jpg" alt="Abenezer Belachew">
+                </div>
+                <span class="student-name">Abenezer Belachew</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="https://randomuser.me/api/portraits/women/38.jpg" alt="Samuel Tekle">
+                </div>
+                <span class="student-name">Samuel Tekle</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="https://randomuser.me/api/portraits/women/38.jpg" alt="Eyasu Tesfahun">
+                </div>
+                <span class="student-name">Eyasu Tesfahun</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="https://randomuser.me/api/portraits/women/38.jpg" alt="Eyasu Solomon">
+                </div>
+                <span class="student-name">Eyasu Solomon</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/Bereket.jpg" alt="Bereket Yohannes">
+                </div>
+                <span class="student-name">Bereket Yohannes</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/Betsega.jpg" alt="Betesga Desalegn">
+                </div>
+                <span class="student-name">Betesga Desalegn</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/Mihret.jpg" alt="Mihiret Tessema">
+                </div>
+                <span class="student-name">Mihiret Tessema</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="https://randomuser.me/api/portraits/women/38.jpg" alt="Habtamu Heramo">
+                </div>
+                <span class="student-name">Habtamu Heramo</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/Abinet.jpg" alt="Abinet Wondimu">
+                </div>
+                <span class="student-name">Abinet Wondimu</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="https://randomuser.me/api/portraits/women/38.jpg" alt="Bemnet Molla">
+                </div>
+                <span class="student-name">Bemnet Molla</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="https://randomuser.me/api/portraits/women/38.jpg" alt="Mintesinot Tassew">
+                </div>
+                <span class="student-name">Mintesinot Tassew</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="https://randomuser.me/api/portraits/women/38.jpg" alt="Kibreab Wolde">
+                </div>
+                <span class="student-name">Kibreab Wolde</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/Amsalu.jpg" alt="Amsalu Desta">
+                </div>
+                <span class="student-name">Amsalu Desta</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/Beza.jpg" alt="Beza Sultan">
+                </div>
+                <span class="student-name">Beza Sultan</span>
+            </div>
+
+            <div class="student-card">
+                <div class="student-photo-wrap">
+                    <img src="./imgs/Dilkeab.jpg" alt="Dilkeab Ayele">
+                </div>
+                <span class="student-name">Dilkeab Ayele</span>
+            </div>
+
+            <!-- ADD MORE STUDENTS BELOW THIS LINE -->
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER (identical to homepage) ===== -->
+<footer class="site-footer" id="contact">
+    <div class="footer-top">
+        <div class="footer-container">
+            <div class="footer-column bureau-info">
+                <div class="f-logo">
+                    <img src="./imgs/logo1.png" alt="Logo">
+                    <h3>Kembata Zone Education Bureau</h3>
+                </div>
+                <p>The central administrative body responsible for educational policy, school oversight, and teacher development within the Kembata Zone region.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="f-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Bureau</a></li>
+                    <li><a href="news.html">Latest News</a></li>
+                    <li><a href="./curriculum.html">Academic Calendar</a></li>
+                    <li><a href="policies.html">Bureau Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-title">Contact Details</h4>
+                <div class="contact-box">
+                    <div class="c-item"><i class="fas fa-map-marker-alt"></i><span>Durame City, Kembata Zone, Ethiopia</span></div>
+                    <div class="c-item"><i class="fas fa-phone-alt"></i><span>+251 91 234 5678<br>+251 98 765 4321</span></div>
+                    <div class="c-item"><i class="fas fa-envelope"></i><span>contact@kembataeducation.gov.et</span></div>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-title">Our Location</h4>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.0000000000!2d37.8864!3d7.2361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x170e5b0000000001%3A0x0000000000000000!2sDurame!5e0!3m2!1sen!2set!4v1700000000000" width="100%" height="150" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-container centered-text">
+            <p>© 2026 Kembata Zone Education Bureau. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="about.js"></script>
+<script src="group-students.js"></script>
+</body>
+</html>
