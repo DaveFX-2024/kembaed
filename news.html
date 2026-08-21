@@ -6,7 +6,6 @@
     <title>News & Updates | Kembata Zone Education Bureau</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="news.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,11 +20,12 @@
         </div>
 
         <ul class="nav-links" id="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Bureau</a></li>
             <li><a href="policies.html">Policies</a></li>
             <li><a href="curriculum.html">Curriculum</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="news.html" class="active">News</a></li>
+            <li><a href="group-students.html">Group Students</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
@@ -59,23 +59,45 @@
     </div>
 
     <div class="news-grid" id="newsGrid">
-
         <article class="news-card">
-            <div class="news-img"><img src="./imgs/News1.jpg" alt="News"><span class="tag">Event</span></div>
-            <div class="news-body"><span>Mar 20, 2026</span><h3>Competent School Leadership for School Improvement</h3><p>The Central Ethiopia Regional Education Bureau has launched the second round of on-the-job capacity-building training for over 330 school leaders and experts across three centers (Hossana, Worabe, and Bui). The initiative aims to transform school administrators into "change leaders" to directly improve educational quality and student outcomes across pre-primary, primary, and middle schools in the region</p><button onclick="openNews(2)">Read Full Story</button></div>
+            <div class="news-img">
+                <img src="./imgs/News1.jpg" alt="News">
+                <span class="tag">Event</span>
+            </div>
+            <div class="news-body">
+                <span>Mar 20, 2026</span>
+                <h3>Competent School Leadership for School Improvement</h3>
+                <p>The Central Ethiopia Regional Education Bureau has launched the second round of on-the-job capacity-building training for over 330 school leaders and experts across three centers (Hossana, Worabe, and Bui).</p>
+                <button onclick="openNews(1)">Read Full Story</button>
+            </div>
         </article>
 
         <article class="news-card">
-            <div class="news-img"><img src="./imgs/News2.jpg" alt="News"><span class="tag">Event</span></div>
-            <div class="news-body"><span>Mar 20, 2026</span><h3>Public Contribution to Educational Infrastructure is Nation-Building: Chief Administrator Endashaw Tassw</h3><p>Chief Administrator of Central Ethiopia Region, Endashaw Tassw (PhD), inaugurated the newly reconstructed Sodo Bui Secondary School in the East Gurage Zone. The project, which cost over 210 million Birr, was made possible through the combined efforts of the local community, private investors, and partner organizations. The Chief Administrator praised this collaboration as a model of the public's commitment to building the nation through the expansion of quality education.</p><button onclick="openNews(2)">Read Full Story</button></div>
+            <div class="news-img">
+                <img src="./imgs/News2.jpg" alt="News">
+                <span class="tag">Event</span>
+            </div>
+            <div class="news-body">
+                <span>Mar 20, 2026</span>
+                <h3>Public Contribution to Educational Infrastructure</h3>
+                <p>Chief Administrator of Central Ethiopia Region, Endashaw Tassw (PhD), inaugurated the newly reconstructed Sodo Bui Secondary School in the East Gurage Zone, built with over 210 million Birr.</p>
+                <button onclick="openNews(2)">Read Full Story</button>
+            </div>
         </article>
 
         <article class="news-card">
-            <div class="news-img"><img src="./imgs/News3.jpg" alt="News"><span class="tag">Exam</span></div>
-            <div class="news-body"><span>Mar 18, 2026</span><h3>Professional Licensing Assessment Underway for Over 18,000 Educators in Central Ethiopia</h3><p>The Central Ethiopia Regional State has launched a massive professional competency assessment for 18,460 teachers and school leaders across 32 centers. Inaugurated by Deputy Chief Administrator Anteneh Fekadu at Wachemo University, the initiative utilizes both paper-based and online testing to ensure educators meet modern technological and pedagogical standards, ultimately aiming to drive regional education quality.</p><button onclick="openNews(3)">Read Full Story</button></div>
+            <div class="news-img">
+                <img src="./imgs/News3.jpg" alt="News">
+                <span class="tag">Exam</span>
+            </div>
+            <div class="news-body">
+                <span>Mar 18, 2026</span>
+                <h3>Professional Licensing Assessment Underway</h3>
+                <p>The Central Ethiopia Regional State has launched a massive professional competency assessment for 18,460 teachers and school leaders across 32 centers utilizing paper and online testing.</p>
+                <button onclick="openNews(3)">Read Full Story</button>
+            </div>
         </article>
-
-       
+    </div>
 
     <section class="newsletter-box">
         <h2>Stay Updated</h2>
@@ -89,7 +111,7 @@
 
 <div id="newsModal" class="modal">
     <div class="modal-content">
-        <span class="close-modal">×</span>
+        <span class="close-modal">&times;</span>
         <div id="modalBody"></div>
     </div>
 </div>
@@ -131,7 +153,7 @@
                     </div>
                     <div class="c-item">
                         <i class="fas fa-phone-alt"></i>
-                        <span>+251 19 234 5678<br>+251 98 765 4321</span>
+                        <span>+251 91 234 5678<br>+251 98 765 4321</span>
                     </div>
                     <div class="c-item">
                         <i class="fas fa-envelope"></i>
@@ -143,7 +165,7 @@
             <div class="footer-column">
                 <h4 class="footer-title">Our Location</h4>
                 <div class="map-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.0000000000!2d37.8864!3d7.2361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x170e5b0000000001%3A0x0000000000000000!2sDurame!5e0!3m2!1sen!2set!4v1700000000000" width="100%" height="150" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.0000000000!2d37.8864!3d7.2361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x170e5b0000000001%3A0x0000000000000000!2sDurame!5e0!3m2!1sen!2set!4v1700000000000" width="100%" height="130" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -155,6 +177,7 @@
         </div>
     </div>
 </footer>
+
 <script src="news.js"></script>
 </body>
 </html>
